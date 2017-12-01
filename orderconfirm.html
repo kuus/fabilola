@@ -11,7 +11,7 @@
     <base href="/fabilola/">
     <!-- for github deploy only -->
     <link rel="stylesheet" href="styles/app.css?v=2201ebf6f384dc3102aeffec33d3372c" inline> </head>
-  <body class="page--finder">
+  <body class="page--orderconfirm">
     <div class="wrap">
       <div class="wrap__top">
         <!-- macro: header -->
@@ -46,140 +46,165 @@
           </div>
         </header>
         <!-- endmacro: header -->
-        <!-- macro: subheader -->
-        <nav class="appSubheader">
-          <ul class="appSubheader__list">
-            <li class="appSubheader__item">
-              <a class="appSubheader__link" href="/index.html">Auctions</a>
-            </li>
-            <li class="appSubheader__item">
-              <a class="appSubheader__link active" href="/finder.html">Fashion Finder</a>
-            </li>
-            <li class="appSubheader__item">
-              <a class="appSubheader__link" href="#">Inspiration</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- endmacro: subheader -->
-        <div class="wrap__top-inner container-fluid">
+        <div class="wrap__top-inner container">
           <!--[if lt IE 10]>
   <div class="alert alert-warning browserupgrade text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
-          <div class="row appPage__intro-bg appPage__intro" style="background-image: url(/images/page__home.jpg)">
-            <div class="container">
-              <div class="appPage__intro">
-                <h1 class="appPage__intro-title">Discover your style in millions of fashion items</h1>
+          <article id="appOrderconfirm" class="container appOrderconfirm">
+            <div class="row appPage__intro">
+              <div class="col">
+                <h1 class="text-uppercase">Gefeliciteerd!</h1>
+                <hr class="divider"></hr>
               </div>
             </div>
-          </div>
-          <section class="row">
-            <div class="container appBg--white">
-              <!-- macro: finderSearchbar { -->
-              <div class="appSearchbar">
-                <div class="appSearchbar__controls">
-                  <div class="appSearchbar__sorter" data-toggle="collapse" data-target="#appSearchbar__sortby" aria-expanded="false">
-                    <span class="appSearchbar__results" data-results>100.000+</span> items sorted by:
-                    <strong class="appSearchbar__sorting">popularity</strong>
+            <div class="row appOrderconfirm__main nask">
+              <div class="col-lg-7 appOrderconfirm__main-product">
+                <div class="appContent__card">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-auto mr-3 mb-3">
+                      <img class="img-fluid" src="images/_preview/1.png" width="120"> </div>
+                    <div class="col-sm-12 col-md">
+                      <h4 class="appContent__simpletitle">Magnani Italy 5-delige messenset</h4>
+                      <p>We hebben je betaling in goede orde ontvangen Jeffrey.
+                        <br> Je ordernummer is
+                        <strong>7959586</strong>. We gaan direct aan het werk om je bestelling te verwerken.</p> Binnen enkele seconden ontvang je een bevestigingsmail op het opgegeven emailadres. Het kan zijn dat de email in je spam folder terecht komt.</p>
+                      <p>Je kunt je bestelling in je account bij
+                        <a href="#" class="appLink">gewonnen specials</a> volgen.</p>
+                    </div>
                   </div>
-                  <button class="btn btn-md btn-outline-primary appSearchbar__btn">
-                    <span class="appSearchbar__btntext">Filter</span>
-                    <span class="badge badge-accent appSearchbar__filterscount">2</span>
-                  </button>
                 </div>
-                <ul id="appSearchbar__sortby" class="appSearchbar__filters collapse">
-                  <li>recent</li>
-                  <li>price</li>
-                </ul>
               </div>
-              <!-- endmacro: finderSearchbar { -->
-              <div class="row py-5">
-                <div class="col-6 col-md-4 col-lg-3 appFind__col">
-                  <!-- Start macro: `findCard` -->
-                  <div class="card appFind appFindCard">
-                    <div class="appFindCard__top">
-                      <a class="appFindCard__top-imgwrap" href="/detail.html">
-                        <img class="img-fluid appFindCard__img" src="images/_preview/find-1.png" alt="Acne Studios"> </a>
-                      <div class="appFindCard__top-proportion"></div>
-                    </div>
-                    <div class="appFindCard__data">
-                      <div class="appFindCard__info">
-                        <h3 class="appFind__title">
-                          <a href="/finder-single.html">Acne Studios</a>
-                        </h3>
-                        <p class="appFind__desc">Leather Moto Jacket</p>
-                      </div>
-                      <div class="appFind__price">
-                        <span data-currency>&#36;</span> 149</div>
-                    </div>
+              <div class="col-lg-5 appOrderconfirm__main-notifications nask__viewwrap">
+                <!-- we don't show nothing here -->
+                <div class="appContent__card" data-nask-view="other">
+                  <h4 class="appContent__simpletitle">Nog even je aandacht
+                    <i class="icon icon-bell"></i>
+                  </h4>
+                  <p>Onze site werkt het beste in andere browsers. Probeer ook eens 1 van deze:</p>
+                  <div class="appContent__card-maincentered">
+                    <ul class="appOrderconfirm__browsers">
+                      <li class="appOrderconfirm__browsers-item">
+                        <a class="appOrderconfirm__browsers-link" href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">
+                          <img src="images/browser-firefox.png" alt="Firefox" width="60">
+                          <span>Firefox</span>
+                        </a>
+                      </li>
+                      <li class="appOrderconfirm__browsers-item">
+                        <a class="appOrderconfirm__browsers-link" href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank">
+                          <img src="images/browser-chrome.png" alt="Google Chrome" width="60">
+                          <span>Google Chrome</span>
+                        </a>
+                      </li>
+                      <li class="appOrderconfirm__browsers-item">
+                        <a class="appOrderconfirm__browsers-link" href="http://www.opera.com/download" target="_blank">
+                          <img src="images/browser-opera.png" alt="Opera" width="60">
+                          <span>Opera</span>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-                  <!-- End macro: `findCard` -->
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 appFind__col">
-                  <!-- Start macro: `findCard` -->
-                  <div class="card appFind appFindCard">
-                    <div class="appFindCard__top">
-                      <a class="appFindCard__top-imgwrap" href="/detail.html">
-                        <img class="img-fluid appFindCard__img" src="images/_preview/find-2.png" alt="Acne Studios"> </a>
-                      <div class="appFindCard__top-proportion"></div>
-                    </div>
-                    <div class="appFindCard__data">
-                      <div class="appFindCard__info">
-                        <h3 class="appFind__title">
-                          <a href="/finder-single.html">Acne Studios</a>
-                        </h3>
-                        <p class="appFind__desc">Leather Moto Jacket</p>
-                      </div>
-                      <div class="appFind__price">
-                        <span data-currency>&#36;</span> 149</div>
-                    </div>
+                <!-- we don't show nothing here -->
+                <div class="appContent__card" data-nask-view="request">
+                  <h4 class="appContent__simpletitle">Nog even je aandacht
+                    <i class="icon icon-bell"></i>
+                  </h4>
+                  <p>Mogen wij je af en toe een bericht sturen over interessante veilingen voor jou?</p>
+                  <div class="appContent__card-maincentered">
+                    <button class="btn btn-lg btn-success nask__askbtn">Ja natuurlijk</button>
                   </div>
-                  <!-- End macro: `findCard` -->
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 appFind__col">
-                  <!-- Start macro: `findCard` -->
-                  <div class="card appFind appFindCard">
-                    <div class="appFindCard__top">
-                      <a class="appFindCard__top-imgwrap" href="/detail.html">
-                        <img class="img-fluid appFindCard__img" src="images/_preview/find-3.png" alt="Acne Studios"> </a>
-                      <div class="appFindCard__top-proportion"></div>
-                    </div>
-                    <div class="appFindCard__data">
-                      <div class="appFindCard__info">
-                        <h3 class="appFind__title">
-                          <a href="/finder-single.html">Acne Studios</a>
-                        </h3>
-                        <p class="appFind__desc">Leather Moto Jacket</p>
-                      </div>
-                      <div class="appFind__price">
-                        <span data-currency>&#36;</span> 149</div>
-                    </div>
+                <div class="appContent__card" data-nask-view="thanks">
+                  <h4 class="appContent__simpletitle">Nog even je aandacht
+                    <i class="icon icon-bell"></i>
+                  </h4>
+                  <p>Mogen wij je af en toe een bericht sturen over interessante veilingen voor jou?</p>
+                  <div class="appContent__card-maincentered">
+                    <button class="btn btn-lg btn-success">
+                      <i class="icon icon-checkmark-thin"></i> Bedankt</button>
                   </div>
-                  <!-- End macro: `findCard` -->
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 appFind__col">
-                  <!-- Start macro: `findCard` -->
-                  <div class="card appFind appFindCard">
-                    <div class="appFindCard__top">
-                      <a class="appFindCard__top-imgwrap" href="/detail.html">
-                        <img class="img-fluid appFindCard__img" src="images/_preview/find-4.png" alt="Acne Studios"> </a>
-                      <div class="appFindCard__top-proportion"></div>
-                    </div>
-                    <div class="appFindCard__data">
-                      <div class="appFindCard__info">
-                        <h3 class="appFind__title">
-                          <a href="/finder-single.html">Acne Studios</a>
-                        </h3>
-                        <p class="appFind__desc">Leather Moto Jacket</p>
-                      </div>
-                      <div class="appFind__price">
-                        <span data-currency>&#36;</span> 149</div>
-                    </div>
+                <div class="appContent__card" data-nask-view="allowing">
+                  <h4 class="appContent__simpletitle">Nog even je aandacht
+                    <i class="icon icon-bell"></i>
+                  </h4>
+                  <p>Mogen wij je af en toe een bericht sturen over interessante veilingen voor jou?</p>
+                  <div class="appContent__card-maincentered appOrderconfirm__allowing">
+                    <span data-nask-env="android"> Klik onderaan op
+                      <button class="btn-native-android">Toestaan</button>
+                    </span>
+                    <span data-nask-env="chrome"> Klik linksboven op:
+                      <button class="btn-native-chrome">Toestaan</button>
+                    </span>
+                    <span data-nask-env="firefox"> Klik linksboven op:
+                      <button class="btn-native-firefox">Notificaties toestaan</button>
+                    </span>
+                    <span data-nask-env="opera"> Klik midden boven op:
+                      <button class="btn-native-opera">Allow</button>
+                    </span>
                   </div>
-                  <!-- End macro: `findCard` -->
                 </div>
               </div>
             </div>
-          </section>
+            <div class="row appOrderconfirm__steps">
+              <h2 class="col-12 text-uppercase">Wat gebeurt er nu?</h2>
+              <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h3 class="appOrderconfirm__steps-title">1. Bevestiging per mail</h3>
+                    <p>Binnen enkele seconden ontvang je een bevestigingsmail op het opgegeven emailadres.</p>
+                  </div>
+                  <div class="col-md-4">
+                    <h3 class="appOrderconfirm__steps-title">2. Special wordt verzonden</h3>
+                    <p>Zodra je Special klaar is wordt deze verzonden door de leverancier. De Track & Trace code kun je in dive account bekijken bij
+                      <a href="#" class="appLink">gewonnen specials</a>.</p>
+                  </div>
+                  <div class="col-md-4">
+                    <h3 class="appOrderconfirm__steps-title">3. Je ontvangt je special</h3>
+                    <p>De levertijd van je Special is afhankelijk van de leverancier.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row appOrderconfirm__footer">
+              <div class="col-lg-6">
+                <div class="appContent__card">
+                  <h3 class="appContent__simpletitle">Heb je nog vragen?</h3>
+                  <p>Als je nog vragen hebt over je Special kun je onze
+                    <a href="#" class="appLink">veelgestelde vragen</a> pagina bezoeken. Mocht je vraag er niet tussen zitten kun je altijd
+                    <a href="#" class="appLink">contact</a> met ons opnemen.</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="appContent__card">
+                  <h3 class="appContent__simpletitle">Deel je ervaring</h3>
+                  <p>Ken jij iemand die ook wel van onze aanbiedingen gebruik wilt maken? Deel het met ze!</p>
+                  <ul class="list-unstyled appOrderconfirm__share">
+                    <li>
+                      <a href="https://facebook.com/fabilola" target="_blank">
+                        <i class="icon icon-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://instagram.com/fabilola" target="_blank">
+                        <i class="icon icon-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://pinterest.com/fabilola" target="_blank">
+                        <i class="icon icon-pinterest"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://tumblr.com/fabilola" target="_blank">
+                        <i class="icon icon-tumblr"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
       <div class="wrap__bottom">

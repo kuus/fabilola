@@ -1,0 +1,648 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FabiLola</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="kuus <kunderikuus@gmail.com> (http://kunderikuus.net)">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Oswald|Open+Sans:400,500,700" rel="stylesheet">
+    <base href="/fabilola/">
+    <!-- for github deploy only -->
+    <link rel="stylesheet" href="styles/app.css?v=2201ebf6f384dc3102aeffec33d3372c" inline> </head>
+  <body class="page--checkout">
+    <div class="wrap">
+      <div class="wrap__top">
+        <!-- macro: header -->
+        <header class="appHeader fixed-top" id="appHeader">
+          <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg">
+              <a class="navbar-brand appLogotype" href="/index.html">Fabi + Lola</a>
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#js_navbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse" id="js_navbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html">home
+                      <span class="sr-only">home</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/content--how-does-it-work.html">how does it work?</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/login.html" data-authmodal="login">Log in</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/register.html" data-authmodal="register">Sign up</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <!-- endmacro: header -->
+        <!-- macro: subheader -->
+        <nav class="appSubheader">
+          <ul class="appSubheader__list">
+            <li class="appSubheader__item">
+              <a class="appSubheader__link" href="/index.html">Auctions</a>
+            </li>
+            <li class="appSubheader__item">
+              <a class="appSubheader__link" href="/finder.html">Fashion Finder</a>
+            </li>
+            <li class="appSubheader__item">
+              <a class="appSubheader__link" href="#">Inspiration</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- endmacro: subheader -->
+        <div class="wrap__top-inner container">
+          <!--[if lt IE 10]>
+  <div class="alert alert-warning browserupgrade text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+          <div id="appCheckout" class="row appCheckout">
+            <form id="appCheckout__form" class="col-lg-9 appCheckout__main">
+              <article class="row">
+                <!-- Summary side: Step 0 / 1 -->
+                <div class="appCheckout__expander">
+                  <div class="appCheckout__expander-price appCheckout__cost-total">&euro; 7,99</div>
+                  <div class="appCheckout__expander-title">Bekijk Special</div>
+                </div>
+                <section class="col-md-5 col-lg-6 order-md-2 card appCheckout__main-summary">
+                  <div class="media appCheckout__product">
+                    <img class="d-flex mr-3 mb-3 appCheckout__product-img" src="images/_preview/1.png" width="120">
+                    <div class="media-body">
+                      <h5 class="mt-0 appCheckout__product-name font-sans">Magnani Italy 5-delige messenset</h5>
+                      <div class="form-group">
+                        <select class="custom-select" name="product_color">
+                          <option value="red">Red</option>
+                          <option value="yellow">Yellow</option>
+                          <option value="black">Black</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="appCheckout__cost">
+                    <hr>
+                    <h5>Winbedrag
+                      <span class="appCheckout__cost-winbedrag" data-val="7,00">&euro; 7,00</span>
+                      <del class="appCheckout__cost-winbedrag--del"></del>
+                    </h5>
+                    <h5>Verzendkosten
+                      <span class="appCheckout__cost-verzendkosten" data-val="0,00">&euro; 0,00</span>
+                    </h5>
+                    <h5>Veilingkosten
+                      <span class="appCheckout__cost-veilingkosten" data-val="0,99">&euro; 0,99</span>
+                    </h5>
+                    <hr>
+                    <h4>Totaal
+                      <span class="appCheckout__cost-totaal" data-val="7,99">&euro; 7,99</span>
+                    </h4>
+                    <hr>
+                    <a class="appCheckout__coupon-trigger" href="#">Heb je een kortingscode?</a>
+                  </div>
+                  <div class="appCheckout__coupon-area">
+                    <div class="form-group">
+                      <label class="form-control-label" for="kortingscode">Vul hier je kortingscode in</label>
+                      <div class="input-group">
+                        <input id="kortingscode" type="text" class="form-control appCheckout__coupon-input" placeholder="Kortingscode">
+                        <span class="input-group-btn">
+                          <button class="btn btn-success appCheckout__coupon-submit" type="button">Toepassen</button>
+                        </span>
+                      </div>
+                      <div class="form-control-feedback ml-3 mt-2 appCheckout__coupon-feedback" data-discount="2">De kortingscode is succesvol toegepast!</div>
+                    </div>
+                  </div>
+                </section>
+                <!-- Data side -->
+                <section class="col-md-7 col-lg-6 order-md-1 card appCheckout__main-data">
+                  <ol class="appCheckout__breadcrumbs">
+                    <li class="appCheckout__breadcrumb active">
+                      <a href="#">Shipping</a>
+                    </li>
+                    <li class="appCheckout__breadcrumb">
+                      <a href="#">Payment</a>
+                    </li>
+                  </ol>
+                  <div class="appCheckout__steps">
+                    <!-- Data side: Step 0 -->
+                    <div id="appCheckout__step-0" class="appCheckout__step">
+                      <h3 class="font-sans h4 my-4">Verzendgegevens</h3>
+                      <p class="m-3 text-muted">Opgeslagen gegevens</p>
+                      <div class="form-group appCheckout__addresschoice">
+                        <label class="custom-control custom-radio">
+                          <input name="addresschoice" type="radio" value="" class="custom-control-input" checked>
+                          <span class="custom-control-indicator"></span>
+                          <span id="appAddress__prefilled" class="custom-control-description">Jeffrey Kuik, Jacobstraat 14,
+                            <br>12312, Amsterdam, Nederland</span>
+                        </label>
+                        <label class="custom-control custom-radio">
+                          <input name="addresschoice" type="radio" value="true" class="custom-control-input">
+                          <span class="custom-control-indicator"></span>
+                          <span class="custom-control-description">Nieuwe gegevens invoeren</span>
+                        </label>
+                      </div>
+                      <div class="appCheckout__details">
+                        <div class="row">
+                          <div class="col col-12 form-group">
+                            <label class="label-over">Aanhef</label>
+                            <label class="custom-control custom-radio">
+                              <input name="aanhef" type="radio" class="custom-control-input" required checked>
+                              <span class="custom-control-indicator"></span>
+                              <span class="custom-control-description">Dhr.</span>
+                            </label>
+                            <label class="custom-control custom-radio">
+                              <input name="aanhef" type="radio" class="custom-control-input" required>
+                              <span class="custom-control-indicator"></span>
+                              <span class="custom-control-description">Mvr.</span>
+                            </label>
+                          </div>
+                          <div class="col-lg-6 form-group">
+                            <label for="voornaam">Voornaam</label>
+                            <input id="voornaam" name="voornaam" type="text" class="form-control" required> </div>
+                          <div class="col-lg-6 form-group">
+                            <label for="achternaam">Achternaam</label>
+                            <input id="achternaam" name="achternaam" type="text" class="form-control" required> </div>
+                          <div class="col-lg-8 form-group">
+                            <label for="straat">Straat</label>
+                            <input id="straat" name="straat" type="text" class="form-control" required> </div>
+                          <div class="col-md-5 col-lg-4 form-group">
+                            <label for="huisnummer">Huisnummer</label>
+                            <input id="huisnummer" name="huisnummer" type="text" class="form-control" required> </div>
+                          <div class="col-md-7 col-lg-4 form-group">
+                            <label for="postcode">Postcode</label>
+                            <input id="postcode" name="postcode" type="text" class="form-control" required> </div>
+                          <div class="col-lg-8 form-group">
+                            <label for="woonplaats">Woonplaats</label>
+                            <input id="woonplaats" name="woonplaats" type="text" class="form-control" required> </div>
+                          <div class="col-12 form-group">
+                            <label class="label-over">Land</label>
+                            <select id="land" class="custom-select w-100" name="land" required>
+                              <option selected>Select a country</option>
+                              <option value="nl">Nederland</option>
+                              <option value="bl">België</option>
+                              <option value="it">Italy</option>
+                            </select>
+                          </div>
+                          <div class="col-12 form-group">
+                            <label for="telefoonnummer">Telefoonnummer</label>
+                            <input id="telefoonnummer" name="telefoonnummer" type="tel" class="form-control"> </div>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-success float-md-right appCheckout__tostep2 mt-3">Verder naar betaalmethode</button>
+                    </div>
+                    <!-- Data side: Step 1 -->
+                    <div id="appCheckout__step-1" class="appCheckout__step">
+                      <div class="appCheckout__address-label">Verzendgegevens</div>
+                      <div class="appCheckout__address">
+                        <p id="appAddress__display">Jeffrey, Jacobstraat 14, 12312 Amsterdam</p>
+                        <a href="#" class="appCheckout__tostep1 text-muted">Wijzigen</a href="#">
+                      </div>
+                      <h3 class="font-sans h4 mt-5 mb-4">Betaalmethode</h3>
+                      <div class="appCheckout__methods">
+                        <label class="appCheckout__method appCheckout__method--ideal">
+                          <input type="radio" name="pay-method" value="ideal">
+                          <div class="appCheckout__method-imgwrap">
+                            <img class="appCheckout__method-img" src="images/checkout-ideal.png" height="68">
+                          </div>
+                          <span class="appCheckout__method-name">iDEAL</span>
+                        </label>
+                        <label class="appCheckout__method">
+                          <input type="radio" name="pay-method" value="paypal">
+                          <div class="appCheckout__method-imgwrap">
+                            <img class="appCheckout__method-img" src="images/checkout-paypal.png" height="68">
+                          </div>
+                          <span class="appCheckout__method-name">PayPal</span>
+                        </label>
+                        <label class="appCheckout__method">
+                          <input type="radio" name="pay-method" value="bancontact">
+                          <div class="appCheckout__method-imgwrap">
+                            <img class="appCheckout__method-img" src="images/checkout-bancontact.png" height="68">
+                          </div>
+                          <span class="appCheckout__method-name">Bancontact</span>
+                        </label>
+                        <label class="appCheckout__method">
+                          <input type="radio" name="pay-method" value="sofort">
+                          <div class="appCheckout__method-imgwrap">
+                            <img class="appCheckout__method-img" src="images/checkout-sofort.png" height="68">
+                          </div>
+                          <span class="appCheckout__method-name">SOFORT</span>
+                        </label>
+                        <label class="appCheckout__method">
+                          <input type="radio" name="pay-method" value="afterpay">
+                          <div class="appCheckout__method-imgwrap">
+                            <img class="appCheckout__method-img" src="images/checkout-afterpay.png" height="68">
+                          </div>
+                          <span class="appCheckout__method-name">AfterPay</span>
+                        </label>
+                      </div>
+                      <p class="mt-4 mb-0">Credit card</p>
+                      <div class="appCheckout__methods">
+                        <label class="appCheckout__method">
+                          <input type="radio" name="pay-method" value="mastercard">
+                          <div class="appCheckout__method-imgwrap">
+                            <img class="appCheckout__method-img" src="images/checkout-mastercard.png" height="68">
+                          </div>
+                          <span class="appCheckout__method-name">Mastercard</span>
+                        </label>
+                        <label class="appCheckout__method">
+                          <input type="radio" name="pay-method" value="visa">
+                          <div class="appCheckout__method-imgwrap">
+                            <img class="appCheckout__method-img" src="images/checkout-visa.png" height="68">
+                          </div>
+                          <span class="appCheckout__method-name">VISA</span>
+                        </label>
+                      </div>
+                      <div class="appCheckout__banks">
+                        <hr>
+                        <h6 class="font-sans my-4">Selecteer uw bank</h6>
+                        <div class="appCheckout__methods appCheckout__methods--bank">
+                          <label class="appCheckout__method appCheckout__method--bank">
+                            <input type="radio" name="pay-bank" value="abn_amro">
+                            <div class="appCheckout__method-imgwrap">
+                              <img class="appCheckout__method-img" src="images/checkout-abn_amro.png" height="74">
+                            </div>
+                            <span class="appCheckout__method-name">ABN AMRO</span>
+                          </label>
+                          <label class="appCheckout__method appCheckout__method--bank">
+                            <input type="radio" name="pay-bank" value="asn_bank">
+                            <div class="appCheckout__method-imgwrap">
+                              <img class="appCheckout__method-img" src="images/checkout-asn_bank.png" height="74">
+                            </div>
+                            <span class="appCheckout__method-name">ASN Bank</span>
+                          </label>
+                          <label class="appCheckout__method appCheckout__method--bank">
+                            <input type="radio" name="pay-bank" value="bunq">
+                            <div class="appCheckout__method-imgwrap">
+                              <img class="appCheckout__method-img" src="images/checkout-bunq.png" height="74">
+                            </div>
+                            <span class="appCheckout__method-name">Bunq</span>
+                          </label>
+                          <label class="appCheckout__method appCheckout__method--bank">
+                            <input type="radio" name="pay-bank" value="ing">
+                            <div class="appCheckout__method-imgwrap">
+                              <img class="appCheckout__method-img" src="images/checkout-ing.png" height="74">
+                            </div>
+                            <span class="appCheckout__method-name">ING</span>
+                          </label>
+                          <label class="appCheckout__method appCheckout__method--bank">
+                            <input type="radio" name="pay-bank" value="knab">
+                            <div class="appCheckout__method-imgwrap">
+                              <img class="appCheckout__method-img" src="images/checkout-knab.png" height="74">
+                            </div>
+                            <span class="appCheckout__method-name">Knab</span>
+                          </label>
+                          <label class="appCheckout__method appCheckout__method--bank">
+                            <input type="radio" name="pay-bank" value="rabobank">
+                            <div class="appCheckout__method-imgwrap">
+                              <img class="appCheckout__method-img" src="images/checkout-rabobank.png" height="74">
+                            </div>
+                            <span class="appCheckout__method-name">Rabobank</span>
+                          </label>
+                          <label class="appCheckout__method appCheckout__method--bank">
+                            <input type="radio" name="pay-bank" value="regio_bank">
+                            <div class="appCheckout__method-imgwrap">
+                              <img class="appCheckout__method-img" src="images/checkout-regio_bank.png" height="74">
+                            </div>
+                            <span class="appCheckout__method-name">Regiobank</span>
+                          </label>
+                          <label class="appCheckout__method appCheckout__method--bank">
+                            <input type="radio" name="pay-bank" value="sns_bank">
+                            <div class="appCheckout__method-imgwrap">
+                              <img class="appCheckout__method-img" src="images/checkout-sns_bank.png" height="74">
+                            </div>
+                            <span class="appCheckout__method-name">SNS Bank</span>
+                          </label>
+                          <label class="appCheckout__method appCheckout__method--bank">
+                            <input type="radio" name="pay-bank" value="triodos">
+                            <div class="appCheckout__method-imgwrap">
+                              <img class="appCheckout__method-img" src="images/checkout-triodos.png" height="74">
+                            </div>
+                            <span class="appCheckout__method-name">Triodos Bank</span>
+                          </label>
+                          <label class="appCheckout__method appCheckout__method--bank">
+                            <input type="radio" name="pay-bank" value="van_lanschot">
+                            <div class="appCheckout__method-imgwrap">
+                              <img class="appCheckout__method-img" src="images/checkout-van_lanschot.png" height="74">
+                            </div>
+                            <span class="appCheckout__method-name">Van Lanschot</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="appCheckout__submit">
+                        <button type="submit" class="btn btn-success float-md-right mt-3">Betalen</button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </article>
+            </form>
+            <aside class="hidden-md-down col-lg-3 appCheckout__side">
+              <div class="card">
+                <ol class="appChecklist">
+                  <li>
+                    <i class="icon icon-checkmark"></i>Geverifieerde verkopers</li>
+                  <li>
+                    <i class="icon icon-checkmark"></i>Niet tevreden? Geld terug</li>
+                  <li>
+                    <i class="icon icon-checkmark"></i>Vragen? Bel:
+                    <a href="tel:020-2618940">020-2618940</a> (ma-vr 9.00-17.00u)</li>
+                </ol>
+                <div class="appCheckout__side-pay">
+                  <div class="row no-gutters">
+                    <div class="col-4">
+                      <img class="img-fluid" title="iDeal" src="images/checkout-ideal.png">
+                    </div>
+                    <div class="col-4">
+                      <img class="img-fluid" title="PayPal" src="images/checkout-paypal.png">
+                    </div>
+                    <div class="col-4">
+                      <img class="img-fluid" title="Mastercard" src="images/checkout-mastercard.png">
+                    </div>
+                    <div class="col-4">
+                      <img class="img-fluid" title="Visa" src="images/checkout-visa.png">
+                    </div>
+                    <div class="col-4">
+                      <img class="img-fluid" title="Maestro" src="images/checkout-maestro.png">
+                    </div>
+                    <div class="col-4">
+                      <img class="img-fluid" title="Afterpay" src="images/checkout-afterpay.png">
+                    </div>
+                  </div>
+                  <a href="https://www.webwinkelkeur.nl/leden/HelloSpecial_1201424.html" title="Webwinkel Keurmerk en klantebeoordelingen" rel="nofollow">
+                    <img class="img-fluid" src="https://dashboard.webwinkelkeur.nl/banners/3" alt="Webwinkel Keurmerk en klantebeoordelingen" title="Webwinkel Keurmerk en klantebeoordelingen"> </a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <div class="wrap__bottom">
+        <footer>
+          <aside class="appColophon">
+            <div class="container">
+              <nav class="row">
+                <div class="appColophon__col col-md-6 col-lg-3">
+                  <h4 class="appColophon__heading">fashiolista.com</h4>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="appColophon__item" href="#">What is Fashiolista.com</a>
+                      <a class="appColophon__item" href="#">About us</a>
+                      <a class="appColophon__item" href="#">Team</a>
+                      <a class="appColophon__item" href="#">Careers</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="appColophon__col col-md-6 col-lg-3">
+                  <h4 class="appColophon__heading">Help</h4>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="appColophon__item" href="#">Help Center</a>
+                      <a class="appColophon__item" href="#">Terms of Service</a>
+                      <a class="appColophon__item" href="#">Privacy Policy</a>
+                      <a class="appColophon__item" href="#">Contact Us</a>
+                      <a class="appColophon__item" href="#">Partners</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="appColophon__col col-md-6 col-lg-3 offset-lg-3">
+                  <h4 class="appColophon__heading">Follow us</h4>
+                  <ul class="list-unstyled">
+                    <li class="appColophon__iconlink">
+                      <a class="appColophon__item" href="https://www.facebook.com/fabilola/" title="Facebook">
+                        <i class="icon icon-facebook"></i>
+                      </a>
+                    </li>
+                    <li class="appColophon__iconlink">
+                      <a class="appColophon__item" href="https://www.instagram.com/fabilola" title="Instagram">
+                        <i class="icon icon-instagram"></i>
+                      </a>
+                    </li>
+                    <li class="appColophon__iconlink">
+                      <a class="appColophon__item" href="https://www.pinterest.com/fabilola" title="Pinterest">
+                        <i class="icon icon-pinterest"></i>
+                      </a>
+                    </li>
+                    <li class="appColophon__iconlink">
+                      <a class="appColophon__item" href="https://www.tumblr.com/fabilola" title="Tumblr">
+                        <i class="icon icon-tumblr"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </aside>
+        </footer>
+        <!-- Start macro: `modal_win` -->
+        <div id="appWinModal" class="modal fade appModal" tabindex="-1" role="dialog" aria-labelledby="winModal" aria-hidden="true">
+          <div class="modal-dialog centered" role="document">
+            <div class="modal-content text-center">
+              <div class="modal-content__top p-3">
+                <img class="img-fluid" src="images/_preview/1.png"> </div>
+              <form class="modal-content__bottom p-4">
+                <h2>Je hebt gewonnen!</h2>
+                <p>Gefeliciteerd, jouw bod van €438 is het winnende bod!</p>
+                <div class="form-group">
+                  <select class="custom-select" name="product_color">
+                    <option value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="black">Black</option>
+                  </select>
+                </div>
+                <!-- @dev this link should be a button.. style won't change: -->
+                <a href="/checkout.html" class="btn btn-md btn-success appShadow" data-dismiss="modal">Naar de kassa</a>
+                <!-- end @dev -->
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- End macro: `modal_win` -->
+      </div>
+    </div>
+    <!-- Start macro: `auth_modal` -->
+    <div id="appAuthModal" class="modal fade modal--centered" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+      <div class="modal-dialog centered" role="document">
+        <div class="modal-content">
+          <div class="view view__register">
+            <!-- Start macro: `auth_register` -->
+            <form class="card appAuthform">
+              <!-- Start macro: `modal__header` -->
+              <div class="modal-header">
+                <h5 class="modal-title">Sign up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <i class="icon icon-cross" aria-hidden="true"></i>
+                </button>
+              </div>
+              <!-- End macro: `modal__header` -->
+              <article class="appAuthform__body">
+                <div class="appAuthform__btnwrap mt-4">
+                  <a href="/profile.html" class="btn btn-facebook btn-lg">
+                    <span class="d-none d-sm-inline">Sign up </span>with Facebook</a>
+                </div>
+                <div class="appDivider py-3">
+                  <span>or</span>
+                  <hr>
+                </div>
+                <div class="form-group">
+                  <label for="formUsername">Username</label>
+                  <input type="text" class="form-control" id="formUsername" name="username"> </div>
+                <div class="form-group">
+                  <label for="formEmail">Email</label>
+                  <input type="email" class="form-control" id="formEmail" name="email"> </div>
+                <div class="form-group">
+                  <label for="formPassword">Password</label>
+                  <input type="password" class="form-control" id="formPassword" name="password"> </div>
+                <div class="form-group">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="nieuwsbrief" value="yes">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Meld mij aan voor de nieuwsbrief</span>
+                  </label>
+                </div>
+                <div class="appAuthform__btnwrap mb-4 mt-3">
+                  <!-- <button type="submit" class="btn btn-primary btn-lg">Sign up</button>@@dev use this, the link is for the demo-->
+                  <a href="/profile.html" class="btn btn-primary btn-lg">Sign up</a>
+                </div>
+              </article>
+              <footer class="modal-footer justify-content-between">
+                <a href="#">Forgot your password?</a>
+                <a href="/login.html" data-authmodal="login">Already registered? Log in here</a>
+              </footer>
+            </form>
+            <!-- End macro: `auth_register` -->
+          </div>
+          <div class="view view__login">
+            <!-- Start macro: `auth_login` -->
+            <form class="card appAuthform">
+              <!-- Start macro: `modal__header` -->
+              <div class="modal-header">
+                <h5 class="modal-title">Log in</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <i class="icon icon-cross" aria-hidden="true"></i>
+                </button>
+              </div>
+              <!-- End macro: `modal__header` -->
+              <article class="appAuthform__body">
+                <div class="appAuthform__btnwrap mt-4">
+                  <a href="/profile.html" class="btn btn-facebook btn-lg">
+                    <span class="d-none d-sm-inline">Log in </span>with Facebook</a>
+                </div>
+                <div class="appDivider py-3">
+                  <span>or</span>
+                  <hr>
+                </div>
+                <div class="form-group">
+                  <label for="formUsername">First name</label>
+                  <input type="text" class="form-control" id="formUsername" name="firstName"> </div>
+                <div class="form-group">
+                  <label for="formPassword">Last name</label>
+                  <input type="password" class="form-control" id="formPassword" name="lastName"> </div>
+                <div class="appAuthform__btnwrap mb-4 mt-3">
+                  <!-- <button type="submit" class="btn btn-primary btn-lg">Log in</button> @@dev use this, the link is for the demo-->
+                  <a href="/profile.html" class="btn btn-primary btn-lg">Log in</a>
+                </div>
+              </article>
+              <footer class="modal-footer justify-content-between">
+                <a href="#">Forgot your password?</a>
+                <a href="/register.html" data-authmodal="register">No account? Sign up here</a>
+              </footer>
+            </form>
+            <!-- End macro: `auth_login` -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End macro: `auth_modal` -->
+    <!-- macro: cookieannouncement -->
+    <div id="js-cookieannouncement" class="cookieannouncement">
+      <div class="cookieannouncement__inner">
+        <div class="cookieannouncement__text">
+          <p>Zeg hello tegen cookies voor een optimale beleving van de site</p>
+          <a href="#">Meer informatie </a>
+        </div>
+        <button class="btn btn-md btn-accent js-cookieannouncement-dismiss">
+          <i class="icon icon-cross"></i> Sluiten</button>
+      </div>
+    </div>
+    <!-- endmacro: cookieannouncement -->
+    <script>
+      (function(b, o, i, l, e, r)
+      {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] = function()
+        {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+      }(window, document, 'script', 'ga'));
+      ga('create', 'UA-XXXXX-X');
+      ga('send', 'pageview');
+    </script>
+    <script>
+      window.i18n = {
+        // set here from the backend the current langcode
+        "current": "en",
+        // here are the translations
+        "en":
+        {
+          "bieden": "Bid",
+          "geboden": "ssss",
+          "eenmaal": "One time...",
+          "andermaal": "Other time...",
+          "geboden": "bid placed...",
+          "geboden-timeless": "Bid placed",
+          "verkocht": "Sold!",
+          "bieden": "Please Bid",
+          "winnen": "Winning",
+          "geladen": "Loading Auction",
+          "gesloten": "Closing",
+          "controleren": "Checking...",
+          "uitverkocht": "Sold out"
+        },
+        "nl":
+        {
+          "bieden": "Bid",
+          "geboden": "ssss",
+          "eenmaal": "Eenmaal...",
+          "andermaal": "Andermaal...",
+          "geboden": "Geboden...",
+          "geboden-timeless": "Geboden",
+          "verkocht": "Verkocht!",
+          "bieden": "Bieden",
+          "winnen": "Winnen",
+          "geladen": "Veiling wordt geladen",
+          "gesloten": "Veiling wordt gesloten",
+          "controleren": "Controleren...",
+          "uitverkocht": "Uitverkocht"
+        },
+        "fr":
+        {
+          "bieden": "Bid",
+          "geboden": "ss",
+          "eenmaal": "Eenmaal...",
+          "andermaal": "Andermaal...",
+          "geboden": "Geboden...",
+          "geboden-timeless": "Geboden",
+          "verkocht": "Verkocht!",
+          "bieden": "Bieden",
+          "winnen": "Winnen",
+          "geladen": "Veiling wordt geladen",
+          "gesloten": "Veiling wordt gesloten",
+          "controleren": "Controleren...",
+          "uitverkocht": "Uitverkocht"
+        }
+      };
+    </script>
+    <script src="scripts/app.js?v=22c5f36de9a7d72d9530c3bd5a4a8019" inline></script>
+  </body>
+</html>
