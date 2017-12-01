@@ -1,0 +1,382 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FabiLola</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="kuus <kunderikuus@gmail.com> (http://kunderikuus.net)">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Oswald|Open+Sans:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/app.css?v=fd35a761019d0f6fd930e4733dd9f410" inline> </head>
+  <body class="page--account-profile">
+    <div class="wrap">
+      <div class="wrap__top">
+        <!-- macro: header -->
+        <header class="appHeader fixed-top" id="appHeader">
+          <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg">
+              <a class="navbar-brand appLogotype" href="/index.html">Fabi + Lola</a>
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#js_navbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse" id="js_navbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item appAccount__navwelcome d-lg-none">
+                    <div class="appAccount__navwelcome-avatar">
+                      <i class="icon icon-user"></i>
+                      <!-- <img class="appAvatar" src="/images/_preview/profile.jpg"> -->
+                    </div>
+                    <div class="appAccount__navwelcome-txt">Hi Janine!</div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html">home
+                      <span class="sr-only">home</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/content--how-does-it-work.html">how does it work?</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item appAccount__navitem js-dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                      <span class="d-lg-none">My account</span>
+                      <span class="d-none d-lg-inline">
+                        <span class="appAccount__navitem-txt">welcome Janine</span>
+                        <span class="appAccount__navitem-avatar">
+                          <i class="icon icon-user"></i>
+                          <!-- <img class="appAvatar" src="/images/_preview/profile.jpg"> -->
+                        </span>
+                      </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="/profile.html">Profile information</a>
+                      <a class="dropdown-item" href="/bids-active.html">My active Bids</a>
+                      <a class="dropdown-item" href="/bids-won.html">Bids I’ve won</a>
+                      <a class="dropdown-item d-none d-lg-inline" href="/index.html">Log out</a>
+                    </div>
+                  </li>
+                  <li class="nav-item d-lg-none">
+                    <a class="nav-link" href="/index.html">Log out</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <!-- endmacro: header -->
+        <!-- macro: subheader -->
+        <nav class="appSubheader">
+          <ul class="appSubheader__list">
+            <li class="appSubheader__item">
+              <a class="appSubheader__link" href="/index.html">Auctions</a>
+            </li>
+            <li class="appSubheader__item">
+              <a class="appSubheader__link" href="/finder.html">Fashion Finder</a>
+            </li>
+            <li class="appSubheader__item">
+              <a class="appSubheader__link" href="#">Inspiration</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- endmacro: subheader -->
+        <div class="wrap__top-inner container">
+          <!--[if lt IE 10]>
+  <div class="alert alert-warning browserupgrade text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+          <div class="appAccount row">
+            <!-- macro: account_sidebar -->
+            <div class="appAccount__menu col-lg-3">
+              <nav class="appAccountSidebar">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <h4 class="card-title">My account</h4>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="/profile.html">Profile information</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="/bids-active.html">My active Bids</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="/bids-won.html">Bids I’ve won</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- endmacro: account_sidebar -->
+            <div class="appAccount__main col-lg-9">
+              <!-- macro: account_menu_trigger -->
+              <h3 class="appAccount__menu-trigger" id="js-myaccount_btn" role="button">
+                <i class="icon icon-chevron-left"></i> My account </h3>
+              <!-- endmacro: account_menu_trigger -->
+              <div class="card">
+                <form class="card-block appAccount appAccount__form form-validate">
+                  <h2 class="card-title">Profile information</h2>
+                  <div id="gegevens_show">
+                    <div class="form-row row no-gutters">
+                      <div class="col-md-3 col-lg-2">
+                        <h4>Personal</h4>
+                      </div>
+                      <div class="col-md-10 col-lg-8">
+                        <div class="row">
+                          <div class="col-md-4 col-lg-3">
+                            <span class="appAccount__key">First Name</span>
+                          </div>
+                          <div class="col-md-8 col-lg-9">
+                            <span class="appAccount__value">Nancy</span>
+                          </div>
+                          <div class="col-md-4 col-lg-3">
+                            <span class="appAccount__key">Last Name</span>
+                          </div>
+                          <div class="col-md-8 col-lg-9">
+                            <span class="appAccount__value">Sinatra</span>
+                          </div>
+                          <div class="col-md-4 col-lg-3">
+                            <span class="appAccount__key">Blog URL</span>
+                          </div>
+                          <div class="col-md-8 col-lg-9">
+                            <span class="appAccount__value">http://blog.com</span>
+                          </div>
+                          <div class="col-md-4 col-lg-3">
+                            <span class="appAccount__key">Facebook URL</span>
+                          </div>
+                          <div class="col-md-8 col-lg-9">
+                            <span class="appAccount__value">https://facebook.com/user</span>
+                          </div>
+                          <div class="col-md-4 col-lg-3">
+                            <span class="appAccount__key">Instagram username</span>
+                          </div>
+                          <div class="col-md-8 col-lg-9">
+                            <span class="appAccount__value">@user</span>
+                          </div>
+                          <div class="col-md-4 col-lg-3">
+                            <span class="appAccount__key">Short Bio</span>
+                          </div>
+                          <div class="col-md-8 col-lg-9">
+                            <span class="appAccount__value">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
+                              qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</span>
+                          </div>
+                          <div class="col-12">
+                            <button id="gegevens_switchedit" class="btn btn-primary btn-lg">Edit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="gegevens_edit">
+                    <div class="form-row row no-gutters">
+                      <div class="col-md-3 col-lg-2">
+                        <h4>Personal</h4>
+                      </div>
+                      <div class="col-md-10 col-lg-8">
+                        <div class="row">
+                          <div class="form-group col-md-6">
+                            <label for="firstName" class="control-label">First name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" required> </div>
+                          <div class="form-group col-md-6">
+                            <label for="lastName" class="control-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" required> </div>
+                          <div class="form-group col-12 has-feedback has-success">
+                            <label for="blogUrl" class="control-label">Blog URL</label>
+                            <input type="url" class="form-control form-control-success" id="blogUrl" name="blogUrl" placeholder="http://www.mywebsite.com">
+                            <small class="form-control-feedback">Example of input validation feedback.</small>
+                          </div>
+                          <div class="form-group col-12">
+                            <label for="facebookUrl" class="control-label">Facebook URL</label>
+                            <input type="url" class="form-control" id="facebookUrl" name="facebookUrl" placeholder="https://www.facebook.com/..."> </div>
+                          <div class="form-group col-md-6">
+                            <label for="facebookUrl" class="control-label">Instagram username
+                              <span class="text-muted">(@username)</span>
+                            </label>
+                            <input type="url" class="form-control" id="facebookUrl" name="facebookUrl">
+                            <small class="form-text text-muted">Example help text.</small>
+                          </div>
+                          <div class="form-group col-12">
+                            <label for="shortBio">Short Bio</label>
+                            <textarea class="form-control" id="shortBio" name="shortBio" rows="6"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row row no-gutters">
+                      <div class="col-md-3 col-lg-2">
+                        <h4>Newsletter</h4>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="form-group form-group--custom-radio">
+                          <label class="control-label">Would you like to receive the weekly newsletter?</label>
+                          <label for="newsletter1" class="custom-control custom-radio">
+                            <input id="newsletter1" name="newsletter" type="radio" class="custom-control-input" checked>
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">yes</span>
+                          </label>
+                          <label for="newsletter2" class="custom-control custom-radio">
+                            <input id="newsletter2" name="newsletter" type="radio" class="custom-control-input">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">no</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row row no-gutters">
+                      <div class="col-md-10 offset-md-3 offset-lg-2 pt-3">
+                        <button type="submit" class="btn btn-primary btn-lg">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap__bottom">
+        <footer>
+          <aside class="appColophon">
+            <div class="container">
+              <nav class="row">
+                <div class="appColophon__col col-md-6 col-lg-3">
+                  <h4 class="appColophon__heading">fashiolista.com</h4>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="appColophon__item" href="#">What is Fashiolista.com</a>
+                      <a class="appColophon__item" href="#">About us</a>
+                      <a class="appColophon__item" href="#">Team</a>
+                      <a class="appColophon__item" href="#">Careers</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="appColophon__col col-md-6 col-lg-3">
+                  <h4 class="appColophon__heading">Help</h4>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="appColophon__item" href="#">Help Center</a>
+                      <a class="appColophon__item" href="#">Terms of Service</a>
+                      <a class="appColophon__item" href="#">Privacy Policy</a>
+                      <a class="appColophon__item" href="#">Contact Us</a>
+                      <a class="appColophon__item" href="#">Partners</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="appColophon__col col-md-6 col-lg-3 offset-lg-3">
+                  <h4 class="appColophon__heading">Follow us</h4>
+                  <ul class="list-unstyled">
+                    <li class="appColophon__iconlink">
+                      <a class="appColophon__item" href="https://www.facebook.com/fabilola/" title="Facebook">
+                        <i class="icon icon-facebook"></i>
+                      </a>
+                    </li>
+                    <li class="appColophon__iconlink">
+                      <a class="appColophon__item" href="https://www.instagram.com/fabilola" title="Instagram">
+                        <i class="icon icon-instagram"></i>
+                      </a>
+                    </li>
+                    <li class="appColophon__iconlink">
+                      <a class="appColophon__item" href="https://www.pinterest.com/fabilola" title="Pinterest">
+                        <i class="icon icon-pinterest"></i>
+                      </a>
+                    </li>
+                    <li class="appColophon__iconlink">
+                      <a class="appColophon__item" href="https://www.tumblr.com/fabilola" title="Tumblr">
+                        <i class="icon icon-tumblr"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </aside>
+        </footer>
+      </div>
+    </div>
+    <!-- macro: cookieannouncement -->
+    <div id="js-cookieannouncement" class="cookieannouncement">
+      <div class="cookieannouncement__inner">
+        <div class="cookieannouncement__text">
+          <p>Zeg hello tegen cookies voor een optimale beleving van de site</p>
+          <a href="#">Meer informatie </a>
+        </div>
+        <button class="btn btn-md btn-accent js-cookieannouncement-dismiss">
+          <i class="icon icon-cross"></i> Sluiten</button>
+      </div>
+    </div>
+    <!-- endmacro: cookieannouncement -->
+    <script>
+      (function(b, o, i, l, e, r)
+      {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] = function()
+        {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+      }(window, document, 'script', 'ga'));
+      ga('create', 'UA-XXXXX-X');
+      ga('send', 'pageview');
+    </script>
+    <script>
+      window.i18n = {
+        // set here from the backend the current langcode
+        "current": "en",
+        // here are the translations
+        "en":
+        {
+          "bieden": "Bid",
+          "geboden": "ssss",
+          "eenmaal": "One time...",
+          "andermaal": "Other time...",
+          "geboden": "bid placed...",
+          "geboden-timeless": "Bid placed",
+          "verkocht": "Sold!",
+          "bieden": "Please Bid",
+          "winnen": "Winning",
+          "geladen": "Loading Auction",
+          "gesloten": "Closing",
+          "controleren": "Checking...",
+          "uitverkocht": "Sold out"
+        },
+        "nl":
+        {
+          "bieden": "Bid",
+          "geboden": "ssss",
+          "eenmaal": "Eenmaal...",
+          "andermaal": "Andermaal...",
+          "geboden": "Geboden...",
+          "geboden-timeless": "Geboden",
+          "verkocht": "Verkocht!",
+          "bieden": "Bieden",
+          "winnen": "Winnen",
+          "geladen": "Veiling wordt geladen",
+          "gesloten": "Veiling wordt gesloten",
+          "controleren": "Controleren...",
+          "uitverkocht": "Uitverkocht"
+        },
+        "fr":
+        {
+          "bieden": "Bid",
+          "geboden": "ss",
+          "eenmaal": "Eenmaal...",
+          "andermaal": "Andermaal...",
+          "geboden": "Geboden...",
+          "geboden-timeless": "Geboden",
+          "verkocht": "Verkocht!",
+          "bieden": "Bieden",
+          "winnen": "Winnen",
+          "geladen": "Veiling wordt geladen",
+          "gesloten": "Veiling wordt gesloten",
+          "controleren": "Controleren...",
+          "uitverkocht": "Uitverkocht"
+        }
+      };
+    </script>
+    <script src="scripts/app.js?v=fa62910e4eb497b70e8ce008e3547718" inline></script>
+  </body>
+</html>

@@ -1,0 +1,249 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FabiLola</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="kuus <kunderikuus@gmail.com> (http://kunderikuus.net)">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Oswald|Open+Sans:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/app.css?v=fd35a761019d0f6fd930e4733dd9f410" inline> </head>
+  <body class="page--register wrap--centered">
+    <div class="wrap">
+      <div class="wrap__top">
+        <div class="wrap__top-inner">
+          <a href="/">
+            <h1 class="appLogotype mb-2">FabiLola</h1>
+          </a>
+          <!-- Start macro: `auth_register` -->
+          <form class="card appAuthform">
+            <!-- Start macro: `modal__header` -->
+            <div class="modal-header">
+              <h5 class="modal-title">Sign up</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="icon icon-cross" aria-hidden="true"></i>
+              </button>
+            </div>
+            <!-- End macro: `modal__header` -->
+            <article class="appAuthform__body">
+              <div class="appAuthform__btnwrap mt-4">
+                <a href="/profile.html" class="btn btn-facebook btn-lg">
+                  <span class="d-none d-sm-inline">Sign up </span>with Facebook</a>
+              </div>
+              <div class="appDivider py-3">
+                <span>or</span>
+                <hr>
+              </div>
+              <div class="form-group">
+                <label for="formUsername">Username</label>
+                <input type="text" class="form-control" id="formUsername" name="username"> </div>
+              <div class="form-group">
+                <label for="formEmail">Email</label>
+                <input type="email" class="form-control" id="formEmail" name="email"> </div>
+              <div class="form-group">
+                <label for="formPassword">Password</label>
+                <input type="password" class="form-control" id="formPassword" name="password"> </div>
+              <div class="form-group">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" name="nieuwsbrief" value="yes">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Meld mij aan voor de nieuwsbrief</span>
+                </label>
+              </div>
+              <div class="appAuthform__btnwrap mb-4 mt-3">
+                <!-- <button type="submit" class="btn btn-primary btn-lg">Sign up</button>@@dev use this, the link is for the demo-->
+                <a href="/profile.html" class="btn btn-primary btn-lg">Sign up</a>
+              </div>
+            </article>
+            <footer class="modal-footer justify-content-between">
+              <a href="#">Forgot your password?</a>
+              <a href="/login.html" data-authmodal="login">Already registered? Log in here</a>
+            </footer>
+          </form>
+          <!-- End macro: `auth_register` -->
+        </div>
+      </div>
+      <div class="wrap__bottom"> </div>
+    </div>
+    <!-- Start macro: `auth_modal` -->
+    <div id="appAuthModal" class="modal fade modal--centered" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+      <div class="modal-dialog centered" role="document">
+        <div class="modal-content">
+          <div class="view view__register">
+            <!-- Start macro: `auth_register` -->
+            <form class="card appAuthform">
+              <!-- Start macro: `modal__header` -->
+              <div class="modal-header">
+                <h5 class="modal-title">Sign up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <i class="icon icon-cross" aria-hidden="true"></i>
+                </button>
+              </div>
+              <!-- End macro: `modal__header` -->
+              <article class="appAuthform__body">
+                <div class="appAuthform__btnwrap mt-4">
+                  <a href="/profile.html" class="btn btn-facebook btn-lg">
+                    <span class="d-none d-sm-inline">Sign up </span>with Facebook</a>
+                </div>
+                <div class="appDivider py-3">
+                  <span>or</span>
+                  <hr>
+                </div>
+                <div class="form-group">
+                  <label for="formUsername">Username</label>
+                  <input type="text" class="form-control" id="formUsername" name="username"> </div>
+                <div class="form-group">
+                  <label for="formEmail">Email</label>
+                  <input type="email" class="form-control" id="formEmail" name="email"> </div>
+                <div class="form-group">
+                  <label for="formPassword">Password</label>
+                  <input type="password" class="form-control" id="formPassword" name="password"> </div>
+                <div class="form-group">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="nieuwsbrief" value="yes">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Meld mij aan voor de nieuwsbrief</span>
+                  </label>
+                </div>
+                <div class="appAuthform__btnwrap mb-4 mt-3">
+                  <!-- <button type="submit" class="btn btn-primary btn-lg">Sign up</button>@@dev use this, the link is for the demo-->
+                  <a href="/profile.html" class="btn btn-primary btn-lg">Sign up</a>
+                </div>
+              </article>
+              <footer class="modal-footer justify-content-between">
+                <a href="#">Forgot your password?</a>
+                <a href="/login.html" data-authmodal="login">Already registered? Log in here</a>
+              </footer>
+            </form>
+            <!-- End macro: `auth_register` -->
+          </div>
+          <div class="view view__login">
+            <!-- Start macro: `auth_login` -->
+            <form class="card appAuthform">
+              <!-- Start macro: `modal__header` -->
+              <div class="modal-header">
+                <h5 class="modal-title">Log in</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <i class="icon icon-cross" aria-hidden="true"></i>
+                </button>
+              </div>
+              <!-- End macro: `modal__header` -->
+              <article class="appAuthform__body">
+                <div class="appAuthform__btnwrap mt-4">
+                  <a href="/profile.html" class="btn btn-facebook btn-lg">
+                    <span class="d-none d-sm-inline">Log in </span>with Facebook</a>
+                </div>
+                <div class="appDivider py-3">
+                  <span>or</span>
+                  <hr>
+                </div>
+                <div class="form-group">
+                  <label for="formUsername">First name</label>
+                  <input type="text" class="form-control" id="formUsername" name="firstName"> </div>
+                <div class="form-group">
+                  <label for="formPassword">Last name</label>
+                  <input type="password" class="form-control" id="formPassword" name="lastName"> </div>
+                <div class="appAuthform__btnwrap mb-4 mt-3">
+                  <!-- <button type="submit" class="btn btn-primary btn-lg">Log in</button> @@dev use this, the link is for the demo-->
+                  <a href="/profile.html" class="btn btn-primary btn-lg">Log in</a>
+                </div>
+              </article>
+              <footer class="modal-footer justify-content-between">
+                <a href="#">Forgot your password?</a>
+                <a href="/register.html" data-authmodal="register">No account? Sign up here</a>
+              </footer>
+            </form>
+            <!-- End macro: `auth_login` -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End macro: `auth_modal` -->
+    <!-- macro: cookieannouncement -->
+    <div id="js-cookieannouncement" class="cookieannouncement">
+      <div class="cookieannouncement__inner">
+        <div class="cookieannouncement__text">
+          <p>Zeg hello tegen cookies voor een optimale beleving van de site</p>
+          <a href="#">Meer informatie </a>
+        </div>
+        <button class="btn btn-md btn-accent js-cookieannouncement-dismiss">
+          <i class="icon icon-cross"></i> Sluiten</button>
+      </div>
+    </div>
+    <!-- endmacro: cookieannouncement -->
+    <script>
+      (function(b, o, i, l, e, r)
+      {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] = function()
+        {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+      }(window, document, 'script', 'ga'));
+      ga('create', 'UA-XXXXX-X');
+      ga('send', 'pageview');
+    </script>
+    <script>
+      window.i18n = {
+        // set here from the backend the current langcode
+        "current": "en",
+        // here are the translations
+        "en":
+        {
+          "bieden": "Bid",
+          "geboden": "ssss",
+          "eenmaal": "One time...",
+          "andermaal": "Other time...",
+          "geboden": "bid placed...",
+          "geboden-timeless": "Bid placed",
+          "verkocht": "Sold!",
+          "bieden": "Please Bid",
+          "winnen": "Winning",
+          "geladen": "Loading Auction",
+          "gesloten": "Closing",
+          "controleren": "Checking...",
+          "uitverkocht": "Sold out"
+        },
+        "nl":
+        {
+          "bieden": "Bid",
+          "geboden": "ssss",
+          "eenmaal": "Eenmaal...",
+          "andermaal": "Andermaal...",
+          "geboden": "Geboden...",
+          "geboden-timeless": "Geboden",
+          "verkocht": "Verkocht!",
+          "bieden": "Bieden",
+          "winnen": "Winnen",
+          "geladen": "Veiling wordt geladen",
+          "gesloten": "Veiling wordt gesloten",
+          "controleren": "Controleren...",
+          "uitverkocht": "Uitverkocht"
+        },
+        "fr":
+        {
+          "bieden": "Bid",
+          "geboden": "ss",
+          "eenmaal": "Eenmaal...",
+          "andermaal": "Andermaal...",
+          "geboden": "Geboden...",
+          "geboden-timeless": "Geboden",
+          "verkocht": "Verkocht!",
+          "bieden": "Bieden",
+          "winnen": "Winnen",
+          "geladen": "Veiling wordt geladen",
+          "gesloten": "Veiling wordt gesloten",
+          "controleren": "Controleren...",
+          "uitverkocht": "Uitverkocht"
+        }
+      };
+    </script>
+    <script src="scripts/app.js?v=fa62910e4eb497b70e8ce008e3547718" inline></script>
+  </body>
+</html>

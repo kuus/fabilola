@@ -1,0 +1,206 @@
+{
+  "appName": "FabiLola",
+  "subheader": [{
+    "title": "Auctions",
+    "url": "/index.html"
+  }, {
+    "title": "Fashion Finder",
+    "url": "/finder.html"
+  }, {
+    "title": "Inspiration",
+    "url": "#"
+  }],
+  "footer": [{
+    "title": "fashiolista.com",
+    "items": [{
+      "text": "What is Fashiolista.com",
+      "link": "#"
+    }, {
+      "text": "About us",
+      "link": "#"
+    }, {
+      "text": "Team",
+      "link": "#"
+    }, {
+      "text": "Careers",
+      "link": "#"
+    }]
+  }, {
+    "title": "Help",
+    "items": [{
+      "text": "Help Center",
+      "link": "#"
+    }, {
+      "text": "Terms of Service",
+      "link": "#"
+    }, {
+      "text": "Privacy Policy",
+      "link": "#"
+    }, {
+      "text": "Contact Us",
+      "link": "#"
+    }, {
+      "text": "Partners",
+      "link": "#"
+    }]
+  }, {
+  }, {
+    "title": "Follow us",
+    "items": [{
+      "text": "Facebook",
+      "link": "https://www.facebook.com/fabilola/",
+      "icon": "facebook"
+    }, {
+      "text": "Instagram",
+      "link": "https://www.instagram.com/fabilola",
+      "icon": "instagram"
+    }, {
+      "text": "Pinterest",
+      "link": "https://www.pinterest.com/fabilola",
+      "icon": "pinterest"
+    }, {
+      "text": "Tumblr",
+      "link": "https://www.tumblr.com/fabilola",
+      "icon": "tumblr"
+    }]
+  }],
+  "newsletter": {
+    "title": "Geen deal missen?",
+    "txt": "Schrijf je in en je bent als eerste op de hoogte van de nieuwste Specials"
+  },
+  "account": {
+    "sidebar": [{
+      "title": "My account",
+      "url": "/profile.html",
+      "subpages": [{
+          "title": "Profile information",
+          "url": "/profile.html"
+        }, {
+          "title": "My active Bids",
+          "url": "/bids-active.html"
+        }, {
+          "title": "Bids I’ve won",
+          "url": "/bids-won.html"
+        }
+      ]
+    }]
+  },
+  "items" : [{
+    "id": 1,
+    "title" : "Daniel Wellington classic petite watch",
+    "url": "/detail.html",
+    "img" : "_preview/1.png",
+    "price": 129,
+    "bid": 475,
+    "state": {
+      "id": "eenmaal",
+      "msg": "going twice..."
+    }
+  }, {
+    "id": 2,
+    "title" : "Daniel Wellington",
+    "url": "/detail.html",
+    "img" : "_preview/2.png",
+    "price": 129,
+    "bid": 475,
+    "state": {
+      "id": "eenmaal",
+      "msg": "going twice..."
+    }
+  }, {
+    "id": 3,
+    "title" : "Daniel Wellington classic petite watch",
+    "url": "/detail.html",
+    "img" : "_preview/3.png",
+    "price": 129,
+    "bid": 475,
+    "state": {
+      "id": "eenmaal",
+      "msg": "going twice..."
+    }
+  }, {
+    "id": 4,
+    "title" : "Classic petite watch",
+    "url": "/detail.html",
+    "img" : "_preview/4.png",
+    "price": 129,
+    "bid": 475,
+    "state": {
+      "id": "eenmaal",
+      "msg": "going twice..."
+    }
+  }, {
+    "id": 5,
+    "title" : "Daniel petite watch",
+    "url": "/detail.html",
+    "img" : "_preview/3.png",
+    "price": 129,
+    "bid": 475,
+    "state": {
+      "id": "eenmaal",
+      "msg": "going twice..."
+    }
+  }, {
+    "id": 6,
+    "title" : "Daniel watch",
+    "url": "/detail.html",
+    "img" : "_preview/2.png",
+    "price": 129,
+    "bid": 475,
+    "state": {
+      "id": "eenmaal",
+      "msg": "going twice..."
+    }
+  }, {
+    "id": 7,
+    "title" : "Daniel Wellington classic petite watch",
+    "url": "/detail.html",
+    "img" : "_preview/1.png",
+    "price": 129,
+    "bid": 475,
+    "state": {
+      "id": "eenmaal",
+      "msg": "going twice..."
+    }
+  }, {
+    "id": 8,
+    "title" : "Daniel Wellington classic",
+    "url": "/detail.html",
+    "img" : "_preview/4.png",
+    "price": 129,
+    "bid": 475,
+    "state": {
+      "id": "eenmaal",
+      "msg": "going twice..."
+    }
+  }],
+  "finds" : [{
+    "id": 1,
+    "title": "Acne Studios",
+    "desc": "Leather Moto Jacket",
+    "url": "/detail.html",
+    "img" : "_preview/find-1.png",
+    "price": 149
+  }, {
+    "id": 2,
+    "title": "Acne Studios",
+    "desc": "Leather Moto Jacket",
+    "url": "/detail.html",
+    "img" : "_preview/find-2.png",
+    "price": 149
+  }, {
+    "id": 3,
+    "title": "Acne Studios",
+    "desc": "Leather Moto Jacket",
+    "url": "/detail.html",
+    "img" : "_preview/find-3.png",
+    "price": 149
+  }, {
+    "id": 4,
+    "title": "Acne Studios",
+    "desc": "Leather Moto Jacket",
+    "url": "/detail.html",
+    "img" : "_preview/find-4.png",
+    "price": 149
+  }]
+}
