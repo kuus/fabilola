@@ -89,7 +89,7 @@
     "id": 1,
     "title" : "Daniel Wellington classic petite watch",
     "url": "/detail.html",
-    "img" : "_preview/1.png",
+    "img" : "preview/1.png",
     "price": 129,
     "bid": 475,
     "state": {
@@ -100,7 +100,7 @@
     "id": 2,
     "title" : "Daniel Wellington",
     "url": "/detail.html",
-    "img" : "_preview/2.png",
+    "img" : "preview/2.png",
     "price": 129,
     "bid": 475,
     "state": {
@@ -111,7 +111,7 @@
     "id": 3,
     "title" : "Daniel Wellington classic petite watch",
     "url": "/detail.html",
-    "img" : "_preview/3.png",
+    "img" : "preview/3.png",
     "price": 129,
     "bid": 475,
     "state": {
@@ -122,7 +122,7 @@
     "id": 4,
     "title" : "Classic petite watch",
     "url": "/detail.html",
-    "img" : "_preview/4.png",
+    "img" : "preview/4.png",
     "price": 129,
     "bid": 475,
     "state": {
@@ -133,7 +133,7 @@
     "id": 5,
     "title" : "Daniel petite watch",
     "url": "/detail.html",
-    "img" : "_preview/3.png",
+    "img" : "preview/3.png",
     "price": 129,
     "bid": 475,
     "state": {
@@ -144,7 +144,7 @@
     "id": 6,
     "title" : "Daniel watch",
     "url": "/detail.html",
-    "img" : "_preview/2.png",
+    "img" : "preview/2.png",
     "price": 129,
     "bid": 475,
     "state": {
@@ -155,7 +155,7 @@
     "id": 7,
     "title" : "Daniel Wellington classic petite watch",
     "url": "/detail.html",
-    "img" : "_preview/1.png",
+    "img" : "preview/1.png",
     "price": 129,
     "bid": 475,
     "state": {
@@ -166,7 +166,7 @@
     "id": 8,
     "title" : "Daniel Wellington classic",
     "url": "/detail.html",
-    "img" : "_preview/4.png",
+    "img" : "preview/4.png",
     "price": 129,
     "bid": 475,
     "state": {
@@ -179,28 +179,28 @@
     "title": "Acne Studios",
     "desc": "Leather Moto Jacket",
     "url": "/detail.html",
-    "img" : "_preview/find-1.png",
+    "img" : "preview/find-1.png",
     "price": 149
   }, {
     "id": 2,
     "title": "Acne Studios",
     "desc": "Leather Moto Jacket",
     "url": "/detail.html",
-    "img" : "_preview/find-2.png",
+    "img" : "preview/find-2.png",
     "price": 149
   }, {
     "id": 3,
     "title": "Acne Studios",
     "desc": "Leather Moto Jacket",
     "url": "/detail.html",
-    "img" : "_preview/find-3.png",
+    "img" : "preview/find-3.png",
     "price": 149
   }, {
     "id": 4,
     "title": "Acne Studios",
     "desc": "Leather Moto Jacket",
     "url": "/detail.html",
-    "img" : "_preview/find-4.png",
+    "img" : "preview/find-4.png",
     "price": 149
   }]
 }

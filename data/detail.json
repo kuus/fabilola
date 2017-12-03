@@ -4,7 +4,7 @@
     "title": "Daniel Wellington",
     "desc": "Classic Petite Stainless Steel Melrose White Dial Mesh Strap Watch",
     "url": "/detail.html",
-    "img" : "/_preview/1.png",
+    "img" : "/preview/1.png",
     "price": 759,
     "bid": 475,
     "discount": 43,
@@ -19,7 +19,7 @@
     },
     "auctioneer": {
       "name": "Dhr. S. van den Ingh",
-      "img": "/_preview/profile.jpg"
+      "img": "/preview/profile.jpg"
     }
   }
 }
