@@ -2,10 +2,10 @@
   "appName": "FabiLola",
   "subheader": [{
     "title": "Auctions",
-    "url": "/index.html"
+    "url": ""
   }, {
     "title": "Fashion Finder",
-    "url": "/finder.html"
+    "url": "finder.html"
   }, {
     "title": "Inspiration",
     "url": "#"
@@ -71,16 +71,16 @@
   "account": {
     "sidebar": [{
       "title": "My account",
-      "url": "/profile.html",
+      "url": "profile.html",
       "subpages": [{
           "title": "Profile information",
-          "url": "/profile.html"
+          "url": "profile.html"
         }, {
           "title": "My active Bids",
-          "url": "/bids-active.html"
+          "url": "bids-active.html"
         }, {
           "title": "Bids I’ve won",
-          "url": "/bids-won.html"
+          "url": "bids-won.html"
         }
       ]
     }]
@@ -88,7 +88,7 @@
   "items" : [{
     "id": 1,
     "title" : "Daniel Wellington classic petite watch",
-    "url": "/detail.html",
+    "url": "detail.html",
     "img" : "preview/1.png",
     "price": 129,
     "bid": 475,
@@ -99,7 +99,7 @@
   }, {
     "id": 2,
     "title" : "Daniel Wellington",
-    "url": "/detail.html",
+    "url": "detail.html",
     "img" : "preview/2.png",
     "price": 129,
     "bid": 475,
@@ -110,7 +110,7 @@
   }, {
     "id": 3,
     "title" : "Daniel Wellington classic petite watch",
-    "url": "/detail.html",
+    "url": "detail.html",
     "img" : "preview/3.png",
     "price": 129,
     "bid": 475,
@@ -121,7 +121,7 @@
   }, {
     "id": 4,
     "title" : "Classic petite watch",
-    "url": "/detail.html",
+    "url": "detail.html",
     "img" : "preview/4.png",
     "price": 129,
     "bid": 475,
@@ -132,7 +132,7 @@
   }, {
     "id": 5,
     "title" : "Daniel petite watch",
-    "url": "/detail.html",
+    "url": "detail.html",
     "img" : "preview/3.png",
     "price": 129,
     "bid": 475,
@@ -143,7 +143,7 @@
   }, {
     "id": 6,
     "title" : "Daniel watch",
-    "url": "/detail.html",
+    "url": "detail.html",
     "img" : "preview/2.png",
     "price": 129,
     "bid": 475,
@@ -154,7 +154,7 @@
   }, {
     "id": 7,
     "title" : "Daniel Wellington classic petite watch",
-    "url": "/detail.html",
+    "url": "detail.html",
     "img" : "preview/1.png",
     "price": 129,
     "bid": 475,
@@ -165,7 +165,7 @@
   }, {
     "id": 8,
     "title" : "Daniel Wellington classic",
-    "url": "/detail.html",
+    "url": "detail.html",
     "img" : "preview/4.png",
     "price": 129,
     "bid": 475,
@@ -178,28 +178,28 @@
     "id": 1,
     "title": "Acne Studios",
     "desc": "Leather Moto Jacket",
-    "url": "/detail.html",
+    "url": "detail.html",
     "img" : "preview/find-1.png",
     "price": 149
   }, {
     "id": 2,
     "title": "Acne Studios",
     "desc": "Leather Moto Jacket",
-    "url": "/detail.html",
+    "url": "detail.html",
     "img" : "preview/find-2.png",
     "price": 149
   }, {
     "id": 3,
     "title": "Acne Studios",
     "desc": "Leather Moto Jacket",
-    "url": "/detail.html",
+    "url": "detail.html",
     "img" : "preview/find-3.png",
     "price": 149
   }, {
     "id": 4,
     "title": "Acne Studios",
     "desc": "Leather Moto Jacket",
-    "url": "/detail.html",
+    "url": "detail.html",
     "img" : "preview/find-4.png",
     "price": 149
   }]
