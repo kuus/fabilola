@@ -93,8 +93,8 @@
     "price": 129,
     "bid": 475,
     "state": {
-      "id": "eenmaal",
-      "msg": "going twice..."
+      "id": "verkocht",
+      "msg": "Sold!"
     }
   }, {
     "id": 2,
@@ -104,8 +104,8 @@
     "price": 129,
     "bid": 475,
     "state": {
-      "id": "eenmaal",
-      "msg": "going twice..."
+      "id": "geboden",
+      "msg": "bid placed..."
     }
   }, {
     "id": 3,
@@ -115,8 +115,8 @@
     "price": 129,
     "bid": 475,
     "state": {
-      "id": "eenmaal",
-      "msg": "going twice..."
+      "id": "andermaal",
+      "msg": "Other time..."
     }
   }, {
     "id": 4,
@@ -127,7 +127,7 @@
     "bid": 475,
     "state": {
       "id": "eenmaal",
-      "msg": "going twice..."
+      "msg": "One time"
     }
   }, {
     "id": 5,
@@ -137,8 +137,8 @@
     "price": 129,
     "bid": 475,
     "state": {
-      "id": "eenmaal",
-      "msg": "going twice..."
+      "id": "geladen",
+      "msg": "Loading Auction"
     }
   }, {
     "id": 6,
@@ -148,8 +148,8 @@
     "price": 129,
     "bid": 475,
     "state": {
-      "id": "eenmaal",
-      "msg": "going twice..."
+      "id": "gesloten",
+      "msg": "Closing"
     }
   }, {
     "id": 7,
@@ -159,8 +159,8 @@
     "price": 129,
     "bid": 475,
     "state": {
-      "id": "eenmaal",
-      "msg": "going twice..."
+      "id": "controleren",
+      "msg": "Checking..."
     }
   }, {
     "id": 8,
@@ -170,8 +170,8 @@
     "price": 129,
     "bid": 475,
     "state": {
-      "id": "eenmaal",
-      "msg": "going twice..."
+      "id": "uitverkocht",
+      "msg": "Sold out"
     }
   }],
   "finds" : [{
