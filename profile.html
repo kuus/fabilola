@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Oswald|Open+Sans:400,500,700" rel="stylesheet">
     <base href="/fabilola/">
     <!-- for github deploy only -->
-    <link rel="stylesheet" href="styles/app.css?v=5bf4f20746c5013d27fc68c3fafb35d1" inline> </head>
+    <link rel="stylesheet" href="styles/app.css?v=400f9dafcc5d8c2750b42850e631d9b5" inline> </head>
   <body class="page--account-profile">
     <div class="wrap">
       <div class="wrap__top">
@@ -186,16 +186,26 @@
                               <button id="delete-photo" class="btn btn-primary">Verwijder foto</button>
                             </div>
                           </div>
+                          <div class="form-group col-12">
+                            <i class="form-feedback-icon"></i>
+                            <label for="username-profile" class="control-label">Gebruikersnaam</label>
+                            <input type="text" class="form-control" id="username-profile" name="username" required>
+                            <small class="form-text text-muted">Gebruikersnaam bestaat al!</small>
+                          </div>
                           <div class="form-group col-md-6">
                             <label for="firstName" class="control-label">First name</label>
                             <input type="text" class="form-control" id="firstName" name="firstName" required> </div>
-                          <div class="form-group col-md-6">
+                          <div class="form-group col-md-6 has-feedback has-error">
+                            <i class="form-feedback-icon"></i>
                             <label for="lastName" class="control-label">Last name</label>
-                            <input type="text" class="form-control" id="lastName" name="lastName" required> </div>
+                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                            <small class="invalid-feedback">Last name cannot contain special chars.</small>
+                          </div>
                           <div class="form-group col-12 has-feedback has-success">
+                            <i class="form-feedback-icon"></i>
                             <label for="blogUrl" class="control-label">Blog URL</label>
                             <input type="url" class="form-control form-control-success" id="blogUrl" name="blogUrl" placeholder="http://www.mywebsite.com">
-                            <small class="form-control-feedback">Example of input validation feedback.</small>
+                            <small class="form-text">Example of input text help.</small>
                           </div>
                           <div class="form-group col-12">
                             <label for="facebookUrl" class="control-label">Facebook URL</label>
@@ -386,6 +396,6 @@
         }
       };
     </script>
-    <script src="scripts/app.js?v=e11d93784a172d792237a6b0b6f976c1" inline></script>
+    <script src="scripts/app.js?v=23b9d626b0526ee963a4256df122d9e6" inline></script>
   </body>
 </html>
