@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Oswald|Open+Sans:400,500,700" rel="stylesheet">
     <base href="/fabilola/">
     <!-- for github deploy only -->
-    <link rel="stylesheet" href="styles/app.css?v=2597bc8d5c7f44bd92b0f4691e1d0cac" inline> </head>
+    <link rel="stylesheet" href="styles/app.css?v=5ce63fd86d48eeebc95cbb697add0f8a" inline> </head>
   <body class="page--faq">
     <div class="wrap">
       <div class="wrap__top">
@@ -628,7 +628,7 @@
                 </div>
               </article>
               <footer class="modal-footer justify-content-between">
-                <a href="#">Forgot your password?</a>
+                <a href="passowrdforgot.html" data-authmodal="password">Forgot your password?</a>
                 <a href="login.html" data-authmodal="login">Already registered? Log in here</a>
               </footer>
             </form>
@@ -666,11 +666,38 @@
                 </div>
               </article>
               <footer class="modal-footer justify-content-between">
-                <a href="#">Forgot your password?</a>
+                <a href="passowrdforgot.html" data-authmodal="password">Forgot your password?</a>
                 <a href="register.html" data-authmodal="register">No account? Sign up here</a>
               </footer>
             </form>
             <!-- End macro: `auth_login` -->
+          </div>
+          <div class="view view__password">
+            <!-- Start macro: `auth_password` -->
+            <form class="card appAuthform">
+              <!-- Start macro: `modal__header` -->
+              <div class="modal-header">
+                <h5 class="modal-title">Password reset</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <i class="icon icon-cross" aria-hidden="true"></i>
+                </button>
+              </div>
+              <!-- End macro: `modal__header` -->
+              <article class="appAuthform__body">
+                <div class="form-group">
+                  <label for="passwordforgotEmail">Email</label>
+                  <input type="email" class="form-control" id="passwordforgotEmail" name="email"> </div>
+                <div class="appAuthform__btnwrap mb-4 mt-3">
+                  <!-- <button type="submit" class="btn btn-primary btn-lg">Send</button>@@dev use this, the link is for the demo-->
+                  <a href="profile.html" class="btn btn-primary btn-lg">Send</a>
+                </div>
+              </article>
+              <footer class="modal-footer justify-content-between">
+                <a href="login.html" data-authmodal="login">Already registered? Log in here</a>
+                <a href="register.html" data-authmodal="register">No account? Sign up here</a>
+              </footer>
+            </form>
+            <!-- End macro: `auth_password` -->
           </div>
         </div>
       </div>
@@ -757,6 +784,6 @@
         }
       };
     </script>
-    <script src="scripts/app.js?v=43f65d66327b0df003a30962d1bf152e" inline></script>
+    <script src="scripts/app.js?v=e309d82231df2c288d0e0f8a83a049ce" inline></script>
   </body>
 </html>
