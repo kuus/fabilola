@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Oswald|Open+Sans:400,500,700" rel="stylesheet">
     <base href="/fabilola/">
     <!-- for github deploy only -->
-    <link rel="stylesheet" href="styles/app.css?v=a6e66367b5cef96b9cabf918018a4ae5" inline> </head>
+    <link rel="stylesheet" href="styles/app.css?v=66265469d1ae17f168b04daf9258e4c1" inline> </head>
   <body class="page-content page--how-does-it-work">
     <div class="wrap">
       <div class="wrap__top">
@@ -298,6 +298,108 @@
       </div>
     </div>
     <!-- endmacro: cookieannouncement -->
+    <!-- Start macro: `modal__payreminder` -->
+    <div id="appPayreminderModal" class="modal fade appModal appPayreminder__modal" tabindex="-1" role="dialog" aria-labelledby="payreminderModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <!-- Start macro: `modal__header` -->
+          <div class="modal-header">
+            <h5 class="modal-title">
+              <i class="icon icon-lock" aria-hidden="true"></i> Gewonnen veiling betalen</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="icon icon-cross" aria-hidden="true"></i>
+            </button>
+          </div>
+          <!-- End macro: `modal__header` -->
+          <form class="modal-body appPayreminder">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="media">
+                  <img class="mr-4" src="images/preview/1.png" alt="Product title" width="100">
+                  <div class="media-body">
+                    <p class="appPayreminder__date">Gewonennen op 26 september om 16:00</p>
+                    <h4 class="appPayreminder__title">K'NEX bouwset 5-in-1 combat crew</h4>
+                    <h5 class="appPayreminder__variation">Blue</h5>
+                  </div>
+                </div>
+                <div class="appPayreminder__table">
+                  <p class="appPayreminder__table-header">Jouw bestelling met order nummer:
+                    <b>123456789</b>
+                  </p>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>Winbedrag</td>
+                        <td data-winbedrag>&euro; 24</td>
+                      </tr>
+                      <tr>
+                        <td>Verzendkosten</td>
+                        <td data-verzendkosten>&euro; 7,95</td>
+                      </tr>
+                      <tr>
+                        <td>Veilingkosten</td>
+                        <td data-veilingkosten>&euro; 0,99</td>
+                      </tr>
+                      <tr>
+                        <td>Betaalkosten</td>
+                        <td data-betaalkosten>&euro; 0,95</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr class="appPayreminder__table-total">
+                        <td>Totaal</td>
+                        <td data-totaal>&euro; 25,94</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <p class="appPayreminder__table-footer">Neem
+                    <a class="text-violet" href="contact.html">
+                      <u>contact</u>
+                    </a> op voor vragen over je betaling.</p>
+                </div>
+              </div>
+              <div class="col-lg-6 text-center">
+                <!-- Start macro: `countdown` -->
+                <div class="countdown">
+                  <div class="countdown__blocks">
+                    <div class="countdown__block">
+                      <span class="countdown__label">Dagen</span>
+                      <div class="countdown__bg">
+                        <div class="countdown__value" data-countdown="days">02</div>
+                      </div>
+                    </div>
+                    <div class="countdown__block">
+                      <span class="countdown__label">Uren</span>
+                      <div class="countdown__bg">
+                        <div class="countdown__value" data-countdown="hours">23</div>
+                      </div>
+                    </div>
+                    <div class="countdown__block">
+                      <span class="countdown__label">Minuten</span>
+                      <div class="countdown__bg">
+                        <div class="countdown__value" data-countdown="minutes">58</div>
+                      </div>
+                    </div>
+                    <div class="countdown__block">
+                      <span class="countdown__label">Seconden</span>
+                      <div class="countdown__bg">
+                        <div class="countdown__value" data-countdown="seconds">03</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End macro: `countdown` -->
+                <!-- @dev this can either be a `<button type="submit"> and a `<a href="#/"></a>` in both cases keep the other attributes: -->
+                <a href="checkout.html" class="btn btn-xl btn-success mt-5">Direct betalen</a>
+                <!-- end @dev -->
+                <p class="mt-4">Eerst mogelijke verzenddatum 29 september</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End macro: `modal__payreminder` -->
     <script>
       (function(b, o, i, l, e, r)
       {
@@ -367,6 +469,6 @@
         }
       };
     </script>
-    <script src="scripts/app.js?v=d897e25702b35b49c45e7c6f05f343eb" inline></script>
+    <script src="scripts/app.js?v=1ef0a7336c6a8c224bfe47c5f22e6a67" inline></script>
   </body>
 </html>
